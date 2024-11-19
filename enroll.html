@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css" /> -->
+    <link rel="stylesheet" href ="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+
+    <title>Document</title>
+
+
+
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <img src="images/ourlogo.png" alt="" class="logo">
+        <div class="navigation">
+            <ul>
+                <i id = "menu-close" class="fas fa-times"></i>
+
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a class ="active" href="course.html">Courses</a></li>
+                <li><a href="contact.html">Contacts</a></li>
+
+            </ul>
+            <img id="menu-btn" src="images/menu.png" alt="">
+
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <br><br>
+            <h1>Enroll Now and Enhance Your Exam Journey</h1>
+            <p>Join thousands of learners worldwide.</p>
+            <a href="#enroll-section" class="btn-primary">Get Started</a>
+            
+        </div>
+    </section>
+
+    <!-- Enroll Section -->
+    <section id="enroll-section" class="enroll">
+        <div class="container">
+            <h2>Enroll in Our Courses</h2>
+            <p>Fill out the form below to start your learning journey.</p>
+    <form action="enroll.php" method="post" id="enrollment-form">
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="course">Select Course:</label>
+            <select id="course" name="course" required>
+                <option value="">Choose a course</option>
+                <option value="political-science">Political Science</option>
+                <option value="current-affairs">Current Affairs and IR</option>
+                <option value="history">History</option>
+                <option value="geography">Geography</option>
+                <option value="indian-art">Indian Art & Culture</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="message">Message / Additional Information:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Submit</button>
+    </form>
+    
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class=""footer-col>
+            <h3>Top Courses</h3>
+            <li><a href="polity.html">Political Science</a></li>
+            <li><a href="current.html">Current Affairs and IR</a></li>
+            <li><a href="history.html">History</a></li>
+            <li><a href="geography.html">Geography</a></li>
+            <li><a href="indianart.html">Indian Art&Culture</a></li>
+
+        </div>
+
+        <div class=""footer-col>
+            <h3>Customer Support</h3>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html">Help Center</a></li>
+                <li><a href="contact.html">Feedback</a></li>
+
+        </div>
+
+        <div class=""footer-col>
+            <h3>Resources</h3>
+            <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Guides</a></li>
+                <li><a href="#">Research</a></li>
+                <li><a href="contact.html">Webinars</a></li>
+
+        </div>
+
+        <div class=""footer-col>
+            <h3>About Us</h3>
+            <li><a href="#">Company</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Mission</a></li>
+            <li><a href="#">Partnerships</a></li>
+
+        </div>
+       <div class ="footer-col">
+        <h3>Newsletter</h3>
+        <p>You can trust us. we only sends prome offers,</p>
+        <div class="subscribe">
+            <input type="text" placeholder="Your Email Address">
+            <a href="#" class="yellow">SUBSCRIBE</a>
+        </div>
+
+       </div>
+
+
+       <div class ="copyright"> 
+        <p>Copyright  ©2024  All rights reserved ||</p>
+        <div class="pro-links"></div>
+        <i class="fab fa-facebook-f "></i>
+        <i class="fab fa-instagram "></i>
+        <i class="fab fa-linkedin-in"></i>
+       </div>
+    </footer>
+
+    <script>
+ $('#menu-btn').click(function(){
+            $('nav .navigation ul').addClass('active')
+        });
+
+        $('#menu-close').click(function(){
+            $('nav .navigation ul').removeClass('active')
+        });
+    </script>
+
+</body>
+</html>
